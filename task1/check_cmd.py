@@ -3,8 +3,6 @@ from string import punctuation
 import argparse
 
 
-
-
 def cmd_stdout(cmd: str) -> str:
     '''Return stdout from command''' 
     result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, encoding='utf-8')
