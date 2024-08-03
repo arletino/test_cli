@@ -1,4 +1,5 @@
 ### AL ###
+
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
 .vscode/
@@ -20,3 +21,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#pytest_cach
+.pytest_cach/
+#pycache
+__pycache__/
