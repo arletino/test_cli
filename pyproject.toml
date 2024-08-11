@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "test-cli"
+version = "0.1.0"
+description = "pytest_some_try"
+authors = ["arletino <titkov@nxt.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.2"
+pyyaml = "^6.0.1"
+pytest-html = "^4.1.1"
+pytest-html-reporter = "^0.2.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
