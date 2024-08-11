@@ -1,0 +1,8 @@
+file_stat: stat.txt
+dir_files: files
+dir_arch: archive
+dir_extr: extaction
+archive_type: zip
+arch_name: arch 
+count: 5
+bs: 11024
