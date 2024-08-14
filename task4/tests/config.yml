@@ -1,0 +1,14 @@
+package_name: p7zip-16.02-28.fc40.x86_64.rpm
+user_name: user2
+ssh_address: 0.0.0.0
+ssh_pwd: 11
+file_stat: stat.txt
+file_log: log.txt
+dir_base_ssh: /home/user2/tmp/pytest_tmp
+dir_files: files
+dir_arch: archive
+dir_extr: extraction
+archive_type: zip
+arch_name: arch 
+count: 5
+bs: 11024
