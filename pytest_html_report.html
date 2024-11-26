@@ -769,7 +769,7 @@
                           <div style="margin-bottom: -4%; margin-left: 30%;">
                             <span class="time__taken">
                                 <svg width="22px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="margin: -1% 2% 0% 29%; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1536 1536"><path d="M896 416v448q0 14-9 23t-23 9H544q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224V416q0-14 9-23t23-9h64q14 0 23 9t9 23zm416 352q0-148-73-273t-198-198t-273-73t-273 73t-198 198t-73 273t73 273t198 198t273 73t273-73t198-198t73-273zm224 0q0 209-103 385.5T1153.5 1433T768 1536t-385.5-103T103 1153.5T0 768t103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768z" fill="#a9a9a9"/></svg>
-                                    Time taken 00:02:05 Hrs
+                                    Time taken 0.73 secs
                             </span>
                           </div>
                           <div>
@@ -797,7 +797,7 @@
                               <div class="suite_count_section">
                                   <div class="card__footer">
                                     <div class="card__footer-section">
-                                      <div class="footer-section__data" style="color:#98cc64">24</div>
+                                      <div class="footer-section__data" style="color:#98cc64">0</div>
                                       <div class="footer-section__label">passed</div>
                                     </div>
                                     <div class="card__footer-section">
@@ -817,7 +817,7 @@
                                       <div class="footer-section__label">xfailed</div>
                                     </div>
                                     <div class="card__footer-section">
-                                      <div class="footer-section__data" style="color:#b13635">0</div>
+                                      <div class="footer-section__data" style="color:#b13635">24</div>
                                       <div class="footer-section__label">error</div>
                                     </div>
                                     <div class="card__footer-section">
@@ -915,23 +915,23 @@
                         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
                 <td>12</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
                 <td>0</td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
                 <td>12</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
                 <td>0</td>
             </tr>
         
@@ -957,264 +957,864 @@
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_a</td>
-                <td>PASS</td>
+                <td>ERROR</td>
                 <td>0.04</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377538567312" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377538567312" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_e</td>
-                <td>PASS</td>
-                <td>0.03</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377538618276" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377538618276" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_t</td>
-                <td>PASS</td>
-                <td>0.03</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-1723637753867568" class="">(...)</a>
+            <div class="modal fade in" id="myModal-1723637753867568" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_d</td>
-                <td>PASS</td>
-                <td>0.04</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-1723637753873576" class="">(...)</a>
+            <div class="modal fade in" id="myModal-1723637753873576" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_u</td>
-                <td>PASS</td>
-                <td>0.03</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377538791392" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377538791392" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_file_exist</td>
-                <td>PASS</td>
-                <td>0.03</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377538838031" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377538838031" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_extract_file_compare_7z_e</td>
-                <td>PASS</td>
-                <td>0.04</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377538895783" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377538895783" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_crc32</td>
-                <td>PASS</td>
-                <td>0.16</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-1723637753895678" class="">(...)</a>
+            <div class="modal fade in" id="myModal-1723637753895678" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_x</td>
-                <td>PASS</td>
-                <td>0.04</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539011226" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539011226" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_l</td>
-                <td>PASS</td>
-                <td>0.04</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539068582" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539068582" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_extract_broken</td>
-                <td>PASS</td>
-                <td>0.04</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539142177" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539142177" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_local/test_1.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_test_broken</td>
-                <td>PASS</td>
-                <td>0.03</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539199772" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539199772" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_a</td>
-                <td>PASS</td>
-                <td>9.31</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539271317" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539271317" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_e</td>
-                <td>PASS</td>
-                <td>9.51</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539325824" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539325824" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_t</td>
-                <td>PASS</td>
-                <td>9.47</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-1723637753940103" class="">(...)</a>
+            <div class="modal fade in" id="myModal-1723637753940103" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_d</td>
-                <td>PASS</td>
-                <td>9.36</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-1723637753946113" class="">(...)</a>
+            <div class="modal fade in" id="myModal-1723637753946113" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_u</td>
-                <td>PASS</td>
-                <td>9.2</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539518692" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539518692" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_file_exist</td>
-                <td>PASS</td>
-                <td>9.21</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539574966" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539574966" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_extract_file_compare_7z_e</td>
-                <td>PASS</td>
-                <td>10.57</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539633713" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539633713" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_crc32</td>
-                <td>PASS</td>
-                <td>9.44</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539692266" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539692266" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_x</td>
-                <td>PASS</td>
-                <td>9.94</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539746969" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539746969" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_7z_l</td>
-                <td>PASS</td>
-                <td>10.16</td>
+                <td>ERROR</td>
+                <td>0.0</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539801419" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539801419" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_extract_broken</td>
-                <td>PASS</td>
-                <td>10.1</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539860058" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539860058" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
             <tr>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">task4/tests/test_ssh/test_02.py</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left">test_test_broken</td>
-                <td>PASS</td>
-                <td>10.3</td>
+                <td>ERROR</td>
+                <td>0.01</td>
                 <td style="word-wrap: break-word;max-width: 200px; white-space: normal; text-align:left"">
+                    @pytest.fixture(scope='class')
+    def load_config
                     
-                    
+            <a data-toggle="modal" href="#myModal-17236377539921916" class="">(...)</a>
+            <div class="modal fade in" id="myModal-17236377539921916" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1.12em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1856 1664"><path d="M1056 1375v-190q0-14-9.5-23.5t-22.5-9.5H832q-13 0-22.5 9.5T800 1185v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19q-13-11-24-11H818q-11 0-24 11q-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126q-17 29-46.5 46t-63.5 17H160q-34 0-63.5-17T50 1601q-37-63-2-126L816 67q17-31 47-49t65-18t65 18t47 49z" fill="#DC143C"/></svg>
+                                @pytest.fixture(scope='class')
+    def load_config_yml():
+        '''Load config from yaml file'''
+>       with open('config.yml') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: 'config.yml'
+
+task4/tests/conftest.py:16: FileNotFoundError
+
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
                 </td>
             </tr>
         
@@ -1227,44 +1827,50 @@
         <div class="tabcontent" id="archives">
             <div id="list-example" class="list-group archive-build-row">
                 
+                    <a class ="list-group-item list-group-item-action" href="#list-item-6" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
+                        <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
+                        <span>build #6</span></br>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 3:15 pm</span>
+                    </a>
+                    
                     <a class ="list-group-item list-group-item-action" href="#list-item-5" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
-                        <i class="fa fa-check" aria-hidden="true" style="color: #98cc64"></i>
+                        <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
                         <span>build #5</span></br>
-                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 3:19 pm</span>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-13 | 7:41 pm</span>
                     </a>
                     
                     <a class ="list-group-item list-group-item-action" href="#list-item-4" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
-                        <i class="fa fa-check" aria-hidden="true" style="color: #98cc64"></i>
+                        <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
                         <span>build #4</span></br>
-                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 2:25 pm</span>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-13 | 7:40 pm</span>
                     </a>
                     
                     <a class ="list-group-item list-group-item-action" href="#list-item-3" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
-                        <i class="fa fa-check" aria-hidden="true" style="color: #98cc64"></i>
+                        <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
                         <span>build #3</span></br>
-                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 2:14 pm</span>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-12 | 8:17 pm</span>
                     </a>
                     
                     <a class ="list-group-item list-group-item-action" href="#list-item-2" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
                         <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
                         <span>build #2</span></br>
-                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 2:11 pm</span>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-12 | 8:16 pm</span>
                     </a>
                     
                     <a class ="list-group-item list-group-item-action" href="#list-item-1" style="font-size: 1.1rem; color: dimgray; margin-bottom: -7%;">
                         <i class="fa fa-times" aria-hidden="true" style="color: #fc6766"></i>
                         <span>build #1</span></br>
-                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-14 | 2:10 pm</span>
+                        <span style="font-size: 0.81rem; color: gray; padding-left: 12%;">2024-08-12 | 7:20 pm</span>
                     </a>
                     
             </div>
         
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
                 
-                    <div id="list-item-5" class="archive-body">
+                    <div id="list-item-6" class="archive-body">
                         <div>
                             <h4 class="archive-header">
-                                Build #5
+                                Build #6
                             </h4>
                             <div class="archive-date">
                                 <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
@@ -1285,12 +1891,12 @@
                             </div>
                         </div>
                         <div class="archive__bar">
-                            <section id="statistic" class="statistic-section-pass one-page-section">
+                            <section id="statistic" class="statistic-section-fail one-page-section">
                                 <div class="container" style="margin-top: -2%;">
                                     <div class="row text-center">
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
-                                                <h2 class="timer count-title count-number">24</h2>
+                                                <h2 class="timer count-title count-number">0</h2>
                                                 <p class="stats-text">PASSED</p>
                                             </div>
                                         </div>
@@ -1321,7 +1927,83 @@
                                         </div>
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
+                                                <h2 class="timer count-title count-number">24</h2>
+                                                <p class="stats-text">ERROR</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
                                                 <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">RERUN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                
+                    <div id="list-item-5" class="archive-body">
+                        <div>
+                            <h4 class="archive-header">
+                                Build #5
+                            </h4>
+                            <div class="archive-date">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                AUGUST 13, 2024
+                            </div>
+                        </div>
+                        <div style="margin-top: -5%;">
+                            <div id="archive-container-1" style="padding-top: 5%; position: absolute;">
+                                <div style="">
+                                    <span class="total__tests">1</span>
+                                </div>
+                                <div id="archive-label-1">
+                                    <span class="archive__label">TEST CASES</span>
+                                </div>
+                            </div>
+                            <div class="archive-chart-container">
+                                <canvas id="archive-chart-1" style="margin-top: 10%; padding-left: 25%; margin-right: -16%; float: right;"></canvas>
+                            </div>
+                        </div>
+                        <div class="archive__bar">
+                            <section id="statistic" class="statistic-section-fail one-page-section">
+                                <div class="container" style="margin-top: -2%;">
+                                    <div class="row text-center">
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">PASSED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0
+                                                </h2>
+                                                <p class="stats-text">FAILED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;"v>
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">SKIPPED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">XPASSED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">XFAILED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">1</h2>
                                                 <p class="stats-text">ERROR</p>
                                             </div>
                                         </div>
@@ -1344,29 +2026,29 @@
                             </h4>
                             <div class="archive-date">
                                 <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                                AUGUST 14, 2024
+                                AUGUST 13, 2024
                             </div>
                         </div>
                         <div style="margin-top: -5%;">
-                            <div id="archive-container-1" style="padding-top: 5%; position: absolute;">
+                            <div id="archive-container-2" style="padding-top: 5%; position: absolute;">
                                 <div style="">
-                                    <span class="total__tests">12</span>
+                                    <span class="total__tests">13</span>
                                 </div>
-                                <div id="archive-label-1">
+                                <div id="archive-label-2">
                                     <span class="archive__label">TEST CASES</span>
                                 </div>
                             </div>
                             <div class="archive-chart-container">
-                                <canvas id="archive-chart-1" style="margin-top: 10%; padding-left: 25%; margin-right: -16%; float: right;"></canvas>
+                                <canvas id="archive-chart-2" style="margin-top: 10%; padding-left: 25%; margin-right: -16%; float: right;"></canvas>
                             </div>
                         </div>
                         <div class="archive__bar">
-                            <section id="statistic" class="statistic-section-pass one-page-section">
+                            <section id="statistic" class="statistic-section-fail one-page-section">
                                 <div class="container" style="margin-top: -2%;">
                                     <div class="row text-center">
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
-                                                <h2 class="timer count-title count-number">12</h2>
+                                                <h2 class="timer count-title count-number">0</h2>
                                                 <p class="stats-text">PASSED</p>
                                             </div>
                                         </div>
@@ -1397,7 +2079,7 @@
                                         </div>
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
+                                                <h2 class="timer count-title count-number">13</h2>
                                                 <p class="stats-text">ERROR</p>
                                             </div>
                                         </div>
@@ -1420,89 +2102,13 @@
                             </h4>
                             <div class="archive-date">
                                 <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                                AUGUST 14, 2024
-                            </div>
-                        </div>
-                        <div style="margin-top: -5%;">
-                            <div id="archive-container-2" style="padding-top: 5%; position: absolute;">
-                                <div style="">
-                                    <span class="total__tests">12</span>
-                                </div>
-                                <div id="archive-label-2">
-                                    <span class="archive__label">TEST CASES</span>
-                                </div>
-                            </div>
-                            <div class="archive-chart-container">
-                                <canvas id="archive-chart-2" style="margin-top: 10%; padding-left: 25%; margin-right: -16%; float: right;"></canvas>
-                            </div>
-                        </div>
-                        <div class="archive__bar">
-                            <section id="statistic" class="statistic-section-pass one-page-section">
-                                <div class="container" style="margin-top: -2%;">
-                                    <div class="row text-center">
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">12</h2>
-                                                <p class="stats-text">PASSED</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0
-                                                </h2>
-                                                <p class="stats-text">FAILED</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;"v>
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
-                                                <p class="stats-text">SKIPPED</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
-                                                <p class="stats-text">XPASSED</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
-                                                <p class="stats-text">XFAILED</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
-                                                <p class="stats-text">ERROR</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
-                                            <div class="counter">
-                                                <h2 class="timer count-title count-number">0</h2>
-                                                <p class="stats-text">RERUN</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                
-                    <div id="list-item-2" class="archive-body">
-                        <div>
-                            <h4 class="archive-header">
-                                Build #2
-                            </h4>
-                            <div class="archive-date">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                                AUGUST 14, 2024
+                                AUGUST 12, 2024
                             </div>
                         </div>
                         <div style="margin-top: -5%;">
                             <div id="archive-container-3" style="padding-top: 5%; position: absolute;">
                                 <div style="">
-                                    <span class="total__tests">12</span>
+                                    <span class="total__tests">13</span>
                                 </div>
                                 <div id="archive-label-3">
                                     <span class="archive__label">TEST CASES</span>
@@ -1549,7 +2155,7 @@
                                         </div>
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
-                                                <h2 class="timer count-title count-number">12</h2>
+                                                <h2 class="timer count-title count-number">13</h2>
                                                 <p class="stats-text">ERROR</p>
                                             </div>
                                         </div>
@@ -1565,20 +2171,20 @@
                         </div>
                     </div>
                 
-                    <div id="list-item-1" class="archive-body">
+                    <div id="list-item-2" class="archive-body">
                         <div>
                             <h4 class="archive-header">
-                                Build #1
+                                Build #2
                             </h4>
                             <div class="archive-date">
                                 <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                                AUGUST 14, 2024
+                                AUGUST 12, 2024
                             </div>
                         </div>
                         <div style="margin-top: -5%;">
                             <div id="archive-container-4" style="padding-top: 5%; position: absolute;">
                                 <div style="">
-                                    <span class="total__tests">12</span>
+                                    <span class="total__tests">13</span>
                                 </div>
                                 <div id="archive-label-4">
                                     <span class="archive__label">TEST CASES</span>
@@ -1625,7 +2231,83 @@
                                         </div>
                                         <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
                                             <div class="counter">
-                                                <h2 class="timer count-title count-number">12</h2>
+                                                <h2 class="timer count-title count-number">13</h2>
+                                                <p class="stats-text">ERROR</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">RERUN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                
+                    <div id="list-item-1" class="archive-body">
+                        <div>
+                            <h4 class="archive-header">
+                                Build #1
+                            </h4>
+                            <div class="archive-date">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                AUGUST 12, 2024
+                            </div>
+                        </div>
+                        <div style="margin-top: -5%;">
+                            <div id="archive-container-5" style="padding-top: 5%; position: absolute;">
+                                <div style="">
+                                    <span class="total__tests">13</span>
+                                </div>
+                                <div id="archive-label-5">
+                                    <span class="archive__label">TEST CASES</span>
+                                </div>
+                            </div>
+                            <div class="archive-chart-container">
+                                <canvas id="archive-chart-5" style="margin-top: 10%; padding-left: 25%; margin-right: -16%; float: right;"></canvas>
+                            </div>
+                        </div>
+                        <div class="archive__bar">
+                            <section id="statistic" class="statistic-section-fail one-page-section">
+                                <div class="container" style="margin-top: -2%;">
+                                    <div class="row text-center">
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">PASSED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0
+                                                </h2>
+                                                <p class="stats-text">FAILED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;"v>
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">SKIPPED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">XPASSED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">0</h2>
+                                                <p class="stats-text">XFAILED</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3" style="max-width: 14.2%;">
+                                            <div class="counter">
+                                                <h2 class="timer count-title count-number">13</h2>
                                                 <p class="stats-text">ERROR</p>
                                             </div>
                                         </div>
@@ -1876,7 +2558,7 @@
                     labels: ['PASS', 'FAIL', 'SKIP', 'XPASS', 'XFAIL', 'ERROR'],
                     datasets: [{
                         label: '# of Votes',
-                        data: [24, 0, 0, 0, 0, 0],
+                        data: [0, 0, 0, 0, 0, 24],
                         backgroundColor: [
                             '#98cc64',
                             '#fc6766',
@@ -1954,7 +2636,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
                         
-                        var passPercent = Math.round((24 / 24) * 100)
+                        var passPercent = Math.round((0 / 24) * 100)
                     
                         var text = passPercent + "%",
                             textX = Math.round((width - ctx.measureText(text).width) / 2),
@@ -1968,9 +2650,9 @@
         </script>
         
         <script>
-            for(var i=0; i<=5; i++) {
+            for(var i=0; i<=6; i++) {
                 var MeSeContext = document.getElementById("archive-chart-"+i).getContext("2d");
-                var archives = {'0': {'pass': '24', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '0', 'rerun': '0', 'total': '24'}, '1': {'pass': '12', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '0', 'rerun': '0', 'total': '12'}, '2': {'pass': '12', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '0', 'rerun': '0', 'total': '12'}, '3': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '12', 'rerun': '0', 'total': '12'}, '4': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '12', 'rerun': '0', 'total': '12'}};
+                var archives = {'0': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '24', 'rerun': '0', 'total': '24'}, '1': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '1', 'rerun': '0', 'total': '1'}, '2': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '13', 'rerun': '0', 'total': '13'}, '3': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '13', 'rerun': '0', 'total': '13'}, '4': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '13', 'rerun': '0', 'total': '13'}, '5': {'pass': '0', 'fail': '0', 'skip': '0', 'xpass': '0', 'xfail': '0', 'error': '13', 'rerun': '0', 'total': '13'}};
                 var pass = archives[i].pass;
                 var fail = archives[i].fail;
                 var skip = archives[i].skip;
@@ -2038,7 +2720,7 @@
                         hoverBackgroundColor: '#84b356',
                         borderColor: '#9bca6d',
                         borderWidth: 1,
-                        data: [12, 12]
+                        data: [0, 0]
                     }, {
                         label: 'Failed',
                         backgroundColor: '#fc6766',
@@ -2073,7 +2755,7 @@
                         hoverBackgroundColor: '#8b2828',
                         borderColor: '#b13635',
                         borderWidth: 1,
-                        data: [0, 0]
+                        data: [12, 12]
                     }]
                 },
                 options: {
@@ -2122,28 +2804,28 @@
             var trends = new Chart(lineCanvas, {
                 type: 'line',
                 data: {
-                  labels : ['3:19 PM | Aug 14', '2:25 PM | Aug 14', '2:14 PM | Aug 14', '2:11 PM | Aug 14', '2:10 PM | Aug 14'],
+                  labels : ['3:15 PM | Aug 14', '7:41 PM | Aug 13', '7:40 PM | Aug 13', '8:17 PM | Aug 12', '8:16 PM | Aug 12', '7:20 PM | Aug 12'],
                   datasets : [
                     {
                       label: 'Passed',
                       fill: false,
                       borderColor : "#98cc64",
                       pointBackgroundColor : "#b3c89e",
-                      data : ['24', '12', '12', '0', '0']
+                      data : ['0', '0', '0', '0', '0', '0']
                     },
                     {
                       label: 'Failed',
                       fill: false,
                       borderColor : "#fc6766",
                       pointBackgroundColor : "#d68d8c",
-                      data : [0, 0, 0, 12, 12]
+                      data : [24, 1, 13, 13, 13, 13]
                     },
                     {
                       label: 'Skipped',
                       fill: false,
                       borderColor : "#ffd050",
                       pointBackgroundColor : "#dac079",
-                      data : ['0', '0', '0', '0', '0']
+                      data : ['0', '0', '0', '0', '0', '0']
                     }
                   ]
                 },
