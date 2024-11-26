@@ -23,5 +23,5 @@ addopts = '-vv -s -m "ssh or hst"'
 norecursedirs = 'temp'
 markers= [  
     'hst', #test fixture folder create with folder_factor
-    'ssh', #test throu ssh
+    'ssh', #test throw ssh
 ]
